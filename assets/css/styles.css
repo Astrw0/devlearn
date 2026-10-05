@@ -1,95 +1,356 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-	--primary: #FF5A00;
-	--uiBg: #303030;
-	--secondaryBg: #ECEFF4;
-	--bg: #E0E0E0;
+  --primary: #FF5A00;
+  --uiBg: #303030;
+  --secondaryBg: #ECEFF4;
+  --bg: #E0E0E0;
 }
 
-.kalam-bold {
-	font-family: "Kalam", cursive;
-	font-weight: 700;
-	font-style: normal;
-	color: var(--primary);
-}
-
-
-
-*{
-	margin: 0;
-	padding: 0;
-}
-#section1{
-	color: #ECEFF4;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	background-color:#303030 ;
-	min-height: 100dvh;
-
-}
-
-#txtsection1{
-
-	width: 50%;
-	padding: 40px;
-	border-radius: 0 0 1 1;
-}
-
-#imgsection1{
-	position: relative;
-	width: 800px;
-	height: 800px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 
-#stsection1{
-	color: #FF5A00;
-	margin-bottom: 20%;
+#section1 {
+  color: #ECEFF4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: #303030;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
 }
 
-#btnsection1div{
-	display: flex;
-	flex-direction: flex end;
-	padding: 8px;
-	background-color: #FF5A00;
-	width: 20%;
-	border-radius: 5px;
+#txtsection1 {
+  width: 50%;
+  padding: 60px 60px 40px 60px;
+  z-index: 2;
 }
 
-#btnsection1{
-	display: flex;
-	flex-direction: flex end;
-	width: 100%;
-	padding: 4px;
-	border-radius: 3px;
+#txtsection1 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+#txtsection1 h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+#stsection1 {
+  color: #FF5A00;
+  font-size: 0.9rem;
+  margin-bottom: 10%;
+}
+
+#sixseven {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  width: 50%;
+  height: 100%;
+}
+
+#imgsection1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tache {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: 0;
+  top: 20px;
+  right: 0;
+}
+
+.ordi {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  z-index: 1;
+  top: 50px;
+  left: 60px;
+}
+
+/* ===================== BOUTONS ===================== */
+.btn-div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FF5A00;
+  width: fit-content;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-div button {
+  background: none;
+  border: none;
+  color: #000000;
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.btn-div ion-icon {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ===================== SECTION 2 - AVEC NOUS ===================== */
+#section2 {
+  background-color: var(--bg);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#cardsection2 {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  position: relative;
+}
+
+#cardsection2 h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+#cardsection2 > p:first-of-type {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#cardsection2 > p:nth-of-type(2) {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 2;
+}
+
+/* Faux éditeur de code dans section2 */
+.code-editor {
+  position: absolute;
+  right: 30px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 42%;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 0.72rem;
+
+  color: #a6e3a1;
 
 }
 
-.tache{
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    z-index: 0;
-    top: 0;
-    right: 0;
+.code-editor .dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
-.ordi{
-    position: absolute;
-    width: 550px;
-    height: 550px;
-    z-index: 1;
-    top: 30px; 
-    left: 100px;
-    margin-left: 0;
+.code-editor .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
+.code-editor .dot.red { background-color: #ff5f57; }
+.code-editor .dot.yellow { background-color: #febc2e; }
+.code-editor .dot.green { background-color: #28c840; }
 
+.code-editor .line { margin: 0; }
+.code-editor .kw { color: #cba6f7; }
+.code-editor .fn { color: #89b4fa; }
+.code-editor .str { color: #a6e3a1; }
+.code-editor .cm { color: #6c7086; }
+.code-editor .num { color: #fab387; }
 
-#sixseven{
-	position: absolute;
-	right: 5%;
-	top: 1%;
+/* ===================== SECTION 3 - ILS NOUS RECOMMANDENT ===================== */
+#section3 {
+  background-color: var(--secondaryBg);
+  padding: 60px 40px;
+  text-align: center;
 }
+
+#section3 h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card1 {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card1 img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.card1 p {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.card1 h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===================== SECTION 4 - CARDS INFO ===================== */
+#section4 {
+  background-color: var(--bg);
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card2 {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.card2 h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.card2 img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card2 p {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Wrapper section4 */
+#section4-wrapper {
+  background-color: var(--bg);
+  padding: 60px 40px;
+}
+
+#section4-wrapper #section4 {
+  padding: 0;
+}
+
+/* ===================== SECTION 5 - FOOTER HERO ===================== */
+#section5 {
+  background-color: #303030;
+  color: #fff;
+  padding: 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+#section5 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 320px;
+  z-index: 2;
+}
+
+#section5 p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+#section5-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+#section5-right {
+  position: absolute;
+  left: 35%;
+  top: -20px;
+}
+
+#section5-right .ordi {
+  width: 320px;
+  height: 320px;
+  top: 10px;
+  left: 30px;
+}
+
+#section5-right .tache {
+  width: 380px;
+  height: 380px;
+  top: 0;
+  right: 0;
+}
+
