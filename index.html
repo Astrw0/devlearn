@@ -1,171 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design - devLearn</title>
-</head>
-<body>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
+  </head>
+  <body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
 
     <div id="section1">
-        <div id="txtsection1">
-            <h1>Développeur, votre futur passion</h1>
-            <p id="stsection1">Monter en compétences dans les meilleurs conditions</p>
-            <h2>Plus vite vous commencez, <br> meilleurs vous serez !</h2>
+      <div id="txtsection1">
+        <h1>Développeur, votre futur passion</h1>
+        <p id="stsection1">
+          Monter en compétences dans les meilleurs conditions
+        </p>
+        <h2>
+          Plus vite vous commencez, <br />
+          meilleurs vous serez !
+        </h2>
 
-            <div class="btn-div">
-                <button>Commencez !</button>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+        <div class="btn-div">
+          <button>Commencez !</button>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
-        <div id="sixseven">
-            <div id="imgsection1">
-                <img src="fichiers/laptop/laptop.png" class="ordi" alt="Laptop">
-                <img src="fichiers/laptop/bgLaptop.svg" class="tache" alt="">
-            </div>
+      </div>
+      <div id="sixseven">
+        <div id="imgsection1">
+          <img src="fichiers/laptop/laptop.png" class="ordi" alt="Laptop" />
+          <img src="fichiers/laptop/bgLaptop.svg" class="tache" alt="" />
         </div>
+      </div>
     </div>
 
     <div id="section2">
-        <div id="cardsection2">
-            <h1>Avec nous :</h1>
-            <p>Bénificier d'un support sain, rapide, efficace, est adapté à vos <br> besoins pour apprendre dans les meilleurs conditions</p>
-            <p>
-                ✓ Choissisez la technologie à apprendre <br>
-                ✓ Devenez meilleures que des développeur séniors <br>
-                ✓ Soyez prêt pour les types de projets
-            </p>
-            <div class="btn-div">
-                <button>Commencez !</button>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-
-
-            <div class="code-editor">
-                <div class="dots">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                </div>
-                <p class="line"><span class="kw">const</span> <span class="fn">devLearn</span> = () =&gt; {</p>
-                <p class="line">&nbsp;&nbsp;<span class="kw">let</span> skills = [];</p>
-                <p class="line">&nbsp;&nbsp;<span class="fn">fetch</span>(<span class="str">'api/courses'</span>)</p>
-                <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">then</span>(res =&gt; res.<span class="fn">json</span>())</p>
-                <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">then</span>(data =&gt; {</p>
-                <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skills = data;</p>
-                <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">console</span>.<span class="fn">log</span>(<span class="str">'✓ Loaded'</span>);</p>
-                <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;});</p>
-                <p class="line">&nbsp;&nbsp;<span class="kw">return</span> skills;</p>
-                <p class="line">};</p>
-                <p class="line"><span class="cm">// Start learning today 🚀</span></p>
-                <p class="line"><span class="fn">devLearn</span>();</p>
-            </div>
+      <div id="cardsection2">
+        <h1>Avec nous :</h1>
+        <p>
+          Bénificier d'un support sain, rapide, efficace, est adapté à vos
+          <br />
+          besoins pour apprendre dans les meilleurs conditions
+        </p>
+        <p id="txtcardsection2">
+          ✓ Choissisez la technologie à apprendre <br />
+          ✓ Devenez meilleures que des développeur séniors <br />
+          ✓ Soyez prêt pour les types de projets
+        </p>
+        <div class="btn-div">
+          <button>Commencez !</button>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
+
+        <div class="code-editor">
+          <div class="dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <p class="line">
+            <span class="kw">const</span> <span class="fn">devLearn</span> = ()
+            =&gt; {
+          </p>
+          <p class="line">
+            &nbsp;&nbsp;<span class="kw">let</span> skills = [];
+          </p>
+          <p class="line">
+            &nbsp;&nbsp;<span class="fn">fetch</span>(<span class="str"
+              >'api/courses'</span
+            >)
+          </p>
+          <p class="line">
+            &nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">then</span>(res =&gt;
+            res.<span class="fn">json</span>())
+          </p>
+          <p class="line">
+            &nbsp;&nbsp;&nbsp;&nbsp;.<span class="fn">then</span>(data =&gt; {
+          </p>
+          <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skills = data;</p>
+          <p class="line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">console</span
+            >.<span class="fn">log</span>(<span class="str">'✓ Loaded'</span>);
+          </p>
+          <p class="line">&nbsp;&nbsp;&nbsp;&nbsp;});</p>
+          <p class="line">&nbsp;&nbsp;<span class="kw">return</span> skills;</p>
+          <p class="line">};</p>
+          <p class="line"><span class="cm">// Start learning today 🚀</span></p>
+          <p class="line"><span class="fn">devLearn</span>();</p>
+        </div>
+      </div>
     </div>
 
-
     <div id="section3">
-        <h2>Ils nous recommandes</h2>
-        <div class="cards-grid">
-            <div class="card1">
-                <img src="fichiers/logo/googleIcon.svg" alt="Google">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Google</h3>
-            </div>
-            <div class="card1">
-                <img src="fichiers/logo/microsoftIcon.svg" alt="Microsoft">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Microsoft</h3>
-            </div>
-            <div class="card1">
-                <img src="fichiers/logo/appleIcon.svg" alt="Apple">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Apple</h3>
-            </div>
-            <div class="card1">
-                <img src="fichiers/logo/amazonIcon.svg" alt="Amazon">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Amazon</h3>
-            </div>
-            <div class="card1">
-                <img src="fichiers/logo/discordIcon.svg" alt="Discord">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Discord</h3>
-            </div>
-            <div class="card1">
-                <img src="fichiers/logo/notionIcon.svg" alt="Notion">
-                <p>meilleurs plateforme pour former les développeurs sur de nouvelle compétences.<br>
-                Elles leur permettent d'être directement opérationnel et efficace.</p>
-                <h3>Notion</h3>
-            </div>
+      <h2>Ils nous recommandes</h2>
+      <div class="cards-grid">
+        <div class="card1">
+          <img src="fichiers/logo/googleIcon.svg" alt="Google" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Google</h3>
         </div>
+        <div class="card1">
+          <img src="fichiers/logo/microsoftIcon.svg" alt="Microsoft" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Microsoft</h3>
+        </div>
+        <div class="card1">
+          <img src="fichiers/logo/appleIcon.svg" alt="Apple" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Apple</h3>
+        </div>
+        <div class="card1">
+          <img src="fichiers/logo/amazonIcon.svg" alt="Amazon" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Amazon</h3>
+        </div>
+        <div class="card1">
+          <img src="fichiers/logo/discordIcon.svg" alt="Discord" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Discord</h3>
+        </div>
+        <div class="card1">
+          <img src="fichiers/logo/notionIcon.svg" alt="Notion" />
+          <p>
+            meilleurs plateforme pour former les développeurs sur de nouvelle
+            compétences.<br />
+            Elles leur permettent d'être directement opérationnel et efficace.
+          </p>
+          <h3>Notion</h3>
+        </div>
+      </div>
     </div>
 
     <div id="section4-wrapper">
-        <div id="section4">
-            <div class="card2">
-                <h3>Crée un compte</h3>
-                <img src="fichiers/cardsImg/createAccount.jpg" alt="Créer un compte">
-                <p>Si vous êtes prêt à vous lancer et monter drastiquement en compétences, vous savez ce qu'il vous reste à faire</p>
-                <div class="btn-div">
-                    <button>Commencez !</button>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card2">
-                <h3>Technologies</h3>
-                <img src="fichiers/cardsImg/technologies.jpg" alt="Technologies">
-                <p>Découvrez les technologies que nous prenons en charge afin de vous apprendre dans les meilleurs conditions</p>
-                <div class="btn-div">
-                    <button>Découvrir</button>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card2">
-                <h3>Rendez-vous</h3>
-                <img src="fichiers/cardsImg/meet.jpg" alt="Rendez-vous">
-                <p>Désireux d'en savoir plus sur nos formations et les prestations que l'on propose. Nous sommes disponibles de <strong>8h à 18h 7j/7</strong> pour des rendez-vous.</p>
-                <div class="btn-div">
-                    <button>Rendez-vous</button>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-            </div>
-            <div class="card2">
-                <h3>Nos formateurs</h3>
-                <img src="fichiers/cardsImg/technologies.jpg" alt="Nos formateurs">
-                <p>Découvrez les formateurs qui dédieront leur temps à votre formation</p>
-                <div class="btn-div">
-                    <button>Découvrir</button>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-            </div>
+      <div id="section4">
+        <div class="card2">
+          <h3>Crée un compte</h3>
+          <img
+            src="fichiers/cardsImg/createAccount.jpg"
+            alt="Créer un compte"
+          />
+          <p>
+            Si vous êtes prêt à vous lancer et monter drastiquement en
+            compétences, vous savez ce qu'il vous reste à faire
+          </p>
+          <div class="btn-div">
+            <button>Commencez !</button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
         </div>
+        <div class="card2">
+          <h3>Technologies</h3>
+          <img src="fichiers/cardsImg/technologies.jpg" alt="Technologies" />
+          <p>
+            Découvrez les technologies que nous prenons en charge afin de vous
+            apprendre dans les meilleurs conditions
+          </p>
+          <div class="btn-div">
+            <button>Découvrir</button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card2">
+          <h3>Rendez-vous</h3>
+          <img src="fichiers/cardsImg/meet.jpg" alt="Rendez-vous" />
+          <p>
+            Désireux d'en savoir plus sur nos formations et les prestations que
+            l'on propose. Nous sommes disponibles de
+            <strong>8h à 18h 7j/7</strong> pour des rendez-vous.
+          </p>
+          <div class="btn-div">
+            <button>Rendez-vous</button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card2">
+          <h3>Nos formateurs</h3>
+          <img src="fichiers/cardsImg/technologies.jpg" alt="Nos formateurs" />
+          <p>
+            Découvrez les formateurs qui dédieront leur temps à votre formation
+          </p>
+          <div class="btn-div">
+            <button>Découvrir</button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <div id="section5">
-        <div id="section5-left">
-            <h2>Développeur, votre futur passion</h2>
-            <p>Monter en compétences dans les meilleurs conditions</p>
-            <div class="btn-div">
-                <button>Commencer</button>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+      <div id="section5-left">
+        <h2>Développeur, votre futur passion</h2>
+        <p>Monter en compétences dans les meilleurs conditions</p>
+        <div class="btn-div">
+          <button>Commencer</button>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
         </div>
-        <div id="section5-right">
-            <img src="fichiers/laptop/laptop.png" class="ordi" alt="Laptop">
-            <img src="fichiers/laptop/bgLaptop.svg" class="tache" alt="">
-        </div>
+      </div>
+      <div id="section5-right">
+        <img src="fichiers/laptop/laptop.png" class="ordi" alt="Laptop" />
+        <img src="fichiers/laptop/bgLaptop.svg" class="tache" alt="" />
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
